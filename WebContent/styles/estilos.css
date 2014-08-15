@@ -1,0 +1,127 @@
+BODY {
+	MARGIN: 5px;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: verdana, arial, helvetica, ms sans serif;
+	BACKGROUND-COLOR: white
+}
+
+.divInicio {
+	color: black;
+	font-weight: bold;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: inset;
+	border-bottom-style: outset;
+	border-right-style: hidden;
+	border-left-style: hidden;
+	background-color: #CE9BBE;
+	clear: right;
+	FONT-SIZE: 16pt;
+	FONT-FAMILY: comic sans ms
+}
+
+.divIntermedio {
+	color: black;
+	font-weight: normal;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: inset;
+	border-bottom-style: outset;
+	border-right-style: hidden;
+	border-left-style: hidden;
+	background-color: #99CC99;
+	FONT-SIZE: 9pt;
+	FONT-FAMILY: verdana, arial, helvetica, ms sans serif;
+}
+
+
+.divIntermedio2 {
+	color: black;
+	font-weight: normal;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: inset;
+	border-bottom-style: outset;
+	border-right-style: hidden;
+	border-left-style: hidden;
+	background-color: #CCDDEE;
+	FONT-SIZE: 9pt;
+	FONT-FAMILY: verdana, arial, helvetica, ms sans serif;
+}
+
+
+.divIntermedio3 {
+	color: black;
+	font-weight: normal;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: inset;
+	border-bottom-style: outset;
+	border-right-style: hidden;
+	border-left-style: hidden;
+	background-color: #EEDD99;
+	FONT-SIZE: 9pt;
+	FONT-FAMILY: verdana, arial, helvetica, ms sans serif;
+}
+
+
+.divAcciones {
+	color: black;
+	font-weight: normal;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: inset;
+	border-bottom-style: outset;
+	border-right-style: hidden;
+	border-left-style: hidden;
+	background-color: #EEF9FF;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: verdana, arial, helvetica, ms sans serif;
+}
+
+.divInfo {
+	border: 1px solid blue;
+	background-color: #CCDDEE;
+}
+
+.divError {
+	color: black;
+	font-weight: normal;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: inset;
+	border-bottom-style: outset;
+	border-right-style: hidden;
+	border-left-style: hidden;
+	background-color: #FF0000;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: verdana, arial, helvetica, ms sans serif;
+}
+
+.propiedad {
+	color: black;
+	font-weight: bold;
+	font-size: 10pt;
+	background-color: #EEEEFF;
+}
+
+.dato {
+	align: left;
+	color: black;
+	font-weight: normal;
+	font-size: 10pt;
+	background-color: #EEF9FF;
+}
+
+.fondoBlanco {
+	font-size: 8pt;
+	background-color: white;
+}
+
+.textoError {
+	color: red;
+	font-weight: bold;
+	font-size: 12pt;
+	background-color: #FFDDDD;
+}
+

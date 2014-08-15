@@ -1,0 +1,33 @@
+##############################################################################
+############### FICHERO DE CONFIGURACION DE LOGS DE GEFEE        #############
+##############################################################################
+
+#log4j.rootLogger=DEBUG, DESARROLLO
+log4j.rootLogger=INFO,PRODUCCION
+log4j.appender.Threshold=ALL
+log4j.appender.ImmediateFlush=true
+log4j.appender.Append=true
+log4j.appender.layout=org.apache.log4j.PatternLayout
+log4j.appender.layout.ConversionPattern=%d{dd/MM/yy HH:mm:ss} %-5p [%c{1}] %m%n
+
+## PatternLayout en http://logging.apache.org/log4j/docs/api/org/apache/log4j/PatternLayout.html
+log4j.appender.CONSOLA=org.apache.log4j.ConsoleAppender
+log4j.appender.CONSOLA.layout=org.apache.log4j.PatternLayout
+log4j.appender.CONSOLA.layout.ConversionPattern=%d{dd/MM/yy HH:mm:ss} %-5p [%c{1}] %m%n
+
+# ENTORNO PRODUCCION
+log4j.appender.PRODUCCION=org.apache.log4j.RollingFileAppender
+log4j.appender.PRODUCCION.File=./swfm.log
+log4j.appender.PRODUCCION.layout=org.apache.log4j.PatternLayout
+log4j.appender.PRODUCCION.layout.ConversionPattern=%d{dd/MM/yy HH:mm:ss} %-5p [%c{1}] %m%n
+log4j.appender.PRODUCCION.MaxFileSize=500KB
+log4j.appender.PRODUCCION.MaxBackupIndex=10
+
+# ENTORNO DESARROLLO
+log4j.appender.DESARROLLO=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.DESARROLLO.Threshold=DEBUG
+log4j.appender.DESARROLLO.ImmediateFlush=true
+log4j.appender.DESARROLLO.Append=true
+log4j.appender.DESARROLLO.File=/usr/genex/log/genex.log
+log4j.appender.DESARROLLO.layout=org.apache.log4j.PatternLayout
+log4j.appender.DESARROLLO.layout.ConversionPattern=%d{dd/MM/yy HH:mm:ss} %-5p %c{1} %m%n 

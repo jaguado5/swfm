@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"> 
+
+    <display-name>SWFM: Servicios Web de Bases de Datos.</display-name> 
+    <description> 
+      Servicios Web de F.M. 
+    </description> 
+
+    <!-- Define servlets that are included in the example application --> 
+
+
+    <!-- **** SWFM: Controller *** --> 
+
+    <servlet> 
+        <servlet-name>controller</servlet-name> 
+        <servlet-class>swfm.controller.FrontalController</servlet-class> 
+        <init-param> 
+            <param-name>xmlDir</param-name> 
+            <param-value>/opt/tomcat/instances/paramvinc/temp</param-value> 
+        </init-param> 
+
+    </servlet> 
+
+    <servlet-mapping> 
+        <servlet-name>controller</servlet-name> 
+        <url-pattern>/FrontalController</url-pattern> 
+    </servlet-mapping> 
+
+
+    <!-- **** SWFM: View (Error Page) *** --> 
+
+    <servlet> 
+        <servlet-name>errorView</servlet-name> 
+        <servlet-class>swfm.view.UsrError</servlet-class> 
+    </servlet> 
+
+    <servlet-mapping> 
+        <servlet-name>errorView</servlet-name> 
+        <url-pattern>/errorPage.view</url-pattern> 
+    </servlet-mapping> 
+
+
+    <!-- **** SWFM: View (Success Page) *** --> 
+
+    <servlet> 
+        <servlet-name>successView</servlet-name> 
+        <servlet-class>swfm.view.UsrSuccess</servlet-class> 
+    </servlet> 
+
+    <servlet-mapping> 
+        <servlet-name>successView</servlet-name> 
+        <url-pattern>/successPage.view</url-pattern> 
+    </servlet-mapping> 
+
+</web-app>
